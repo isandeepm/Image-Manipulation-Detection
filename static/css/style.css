@@ -1,0 +1,147 @@
+/* General reset for better cross-browser consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background: url('../images/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Navigation bar styles */
+.navbar {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 15px 0;
+    text-align: center;
+}
+
+.navbar .container h1 {
+    color: #fff;
+    font-size: 24px;
+    margin: 0;
+    font-weight: bold;
+}
+
+/* Main container for centering content */
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    padding: 20px;
+}
+
+/* Upload container styles */
+.upload-container {
+    background: rgba(255, 255, 255, 0.9);
+    /* Semi-transparent white background */
+    padding: 40px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+}
+
+.upload-container h2 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+label.custom-file-upload {
+    background-color: #007BFF;
+    color: white;
+    padding: 15px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+}
+
+label.custom-file-upload i {
+    margin-right: 10px;
+}
+
+label.custom-file-upload:hover {
+    background-color: #0056b3;
+}
+
+input[type="submit"] {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #218838;
+}
+
+.result-container {
+    margin-top: 30px;
+}
+
+.result-container p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+a {
+    display: inline-block;
+    color: #007BFF;
+    text-decoration: none;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+    .navbar .container h1 {
+        font-size: 20px;
+    }
+
+    .upload-container {
+        padding: 30px;
+        max-width: 80%;
+    }
+}
